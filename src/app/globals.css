@@ -1,0 +1,572 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+.circle {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  border: solid 1px rgba(255, 255, 255, 0.28);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.circle {
+  width: 650px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border: 10px solid rgb(255 255 255 / 0%);
+  box-shadow: rgba(0, 0, 0, 0.37) 0px 8px 32px;
+  background: linear-gradient(
+    135deg,
+    rgb(255 255 255 / 0%),
+    rgb(255 255 255 / 0%)
+  );
+  backdrop-filter: blur(10px);
+}
+
+.home-div-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: -11rem;
+}
+
+.home-div {
+  max-width: 54%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.main-heading-div p {
+  font-size: 45px;
+  font-weight: 800;
+}
+p.name {
+  color: #3ba0a4;
+}
+p.intro {
+  width: 30rem;
+}
+.button-div {
+  display: flex;
+  column-gap: 1.7rem;
+  margin-top: 18px;
+}
+
+.about-btn {
+  background-color: #3ba0a4;
+  border-color: transparent;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 23px;
+}
+
+.resume-btn {
+  background-color: initial;
+  border: solid 1px;
+  border-color: #3ba0a4;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 23px;
+}
+
+.main-div-pages {
+  width: 100%;
+}
+/* foot css */
+
+.foot-div {
+  background-color: black;
+  color: white;
+  padding: 20px 0px 20px 0px;
+}
+
+.follow-div p {
+  margin: 0px;
+  padding: 0px 0px 10px 0px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.icon-main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-div {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  justify-content: center;
+  color: #3ba0a4;
+  padding: 10px 0px 10px 0px;
+}
+
+.icon-div div img {
+  width: 80%;
+}
+
+.right-div p {
+  margin: 0px;
+  text-align: center;
+  color: #3ba0a4;
+  padding: 10px 0px 0px 0px;
+}
+
+/*About Page css  */
+
+.about-main-div {
+  margin-top: -116px;
+  background-color: black;
+  color: #3ba0a4;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-main-div h1 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.intro-div h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.mark {
+  background-color: transparent;
+  color: #3ba0a4;
+}
+.about-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  flex: 1;
+  column-gap: 70px;
+}
+
+.avatar-div {
+  width: 100%;
+}
+.avatar-div img {
+  width: 90%;
+}
+
+.intro-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding-right: 3rem;
+}
+
+.hobbies-card-main {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px 60px 0px;
+  flex-wrap: wrap;
+}
+.hobbies-card {
+  display: flex;
+  flex-direction: row-reverse;
+  column-gap: 25px;
+  align-items: center;
+  justify-content: center;
+  border: transparent;
+  border-radius: 4px;
+  box-shadow: 0px 6px 20px 4px #00f2ff66;
+  padding: 17px 5px 17px 5px;
+  width: 20%;
+  flex-wrap: wrap;
+}
+.hobbies-main-div h3 {
+  padding-top: 30px;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
+p.hobbies-title {
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+}
+.description {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.content-div {
+  padding: 20px;
+}
+/* Contact Page */
+
+.form-main-div {
+  background: black;
+  color: white;
+  padding-top: 116px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-main-div div h1 {
+  color: white;
+  padding-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.form-div {
+  width: 27%;
+  padding: 30px;
+  border: solid transparent 1px;
+  border-radius: 4px;
+  box-shadow: 0px 6px 20px 4px #00f2ff66;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 7px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  border: solid #3ba0a4 2px;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+}
+textarea {
+  width: 100%;
+  border: solid #3ba0a4 2px;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+}
+
+.btn-div button {
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+  background-color: #3ba0a4;
+  border: solid #3ba0a4 2px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.btn-div button:hover {
+  background-color: white;
+  color: #3ba0a4;
+  border-color: white;
+}
+
+/* Resume Page */
+
+.resume-main-div {
+  padding-top: 126px;
+  background-color: black;
+  color: white;
+}
+
+.resume-main-div h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.downlaod-div {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.downlaod-div button {
+  background-color: #3ba0a4;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 4px;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.downlaod-div button:hover {
+  background-color: white;
+  color: #3ba0a4;
+}
+
+.skills-div {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: center;
+  margin-top: 64px;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  padding-bottom: 40px;
+}
+
+.skill-div {
+  border: solid #3ba0a4 0px;
+  box-shadow: 0px 6px 20px 4px #00f2ff66;
+  padding: 20px;
+}
+.skill-div ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.skill-div ul {
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+.skill-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+
+/* Portfolio-Page */
+
+.portfolio-main-div {
+  background-color: black;
+  color: white;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-heading-div h1 {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.cards-main-div {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 57px;
+  column-gap: 50px;
+  padding-bottom: 60px;
+  width: 80%;
+}
+
+.card-div {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+  border: transparent;
+  border-radius: 4px;
+  box-shadow: 0px 6px 20px 4px #00f2ff66;
+  padding-bottom: 20px;
+}
+
+.img-portfolio {
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.iconss {
+  width: 70%;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 912px) {
+  .about-div {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 5px 20px 5px 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .skills-div {
+    justify-content: flex-start;
+    margin-left: 75px;
+  }
+
+  .card-div {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hobbies-card-main {
+    margin: 20px;
+    row-gap: 20px;
+    padding: 10px 0px 50px 0px;
+  }
+  .hobbies-card {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+/* responsive css */
+@media (max-width: 714px) {
+  .nav {
+    justify-content: center;
+    margin-bottom: -219px;
+  }
+
+  .nav-link ul {
+    row-gap: 10px;
+    padding: 0px;
+    justify-content: center;
+  }
+
+  .main-div {
+    padding-top: 0px;
+  }
+  .div-para {
+    text-align: center;
+  }
+
+  .about-main-div {
+    padding-top: 119px;
+  }
+  .form-main-div {
+    padding-top: 119px;
+  }
+
+  .form-div {
+    width: 75%;
+  }
+
+  .resume-main-div {
+    padding-top: 119px;
+  }
+
+  .skills-div {
+    justify-content: center;
+    row-gap: 30px;
+    padding-bottom: 55px;
+    margin-left: 0px;
+  }
+  .skill-div {
+    width: 100%;
+    margin: 0px 20px 0px 20px;
+  }
+
+  .portfolio-main-div {
+    padding-top: 119px;
+  }
+  .cards-main-div {
+    padding-bottom: 60px;
+  }
+  .card-div {
+    width: 100%;
+    margin: 0px 30px;
+  }
+}
+
+/* @media(max-width:550px){
+  .form-div{
+    width: 75%;
+  }
+} */
+
+@media (max-width: 372px) {
+  .div-headingone {
+    font-size: 30px;
+  }
+
+  .div-headingtwo {
+    font-size: 26px;
+  }
+
+  .div-para {
+    font-size: 20px;
+    padding: 10px 0px 7px 0px;
+    text-align: center;
+  }
+
+  .div-btn {
+    justify-content: center;
+    row-gap: 20px;
+  }
+}
