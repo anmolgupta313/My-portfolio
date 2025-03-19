@@ -4,20 +4,15 @@ const { experience } = require("@/Constants");
 import React, { useState } from "react";
 
 function Experience() {
-  const [activeArcc, setActiveArcc] = useState(false);
-  const [id, setId] = useState("");
+  const [activeId, setActiveId] = useState(null);
 
   function arrcordianDown(e) {
-    setId(e.target.id);
-    setActiveArcc((active) => {
-      return !active;
-    });
-
-    console.log("hello");
+    const clickedId = e.target.id;
+    setActiveId((prevId) => (prevId === clickedId ? null : clickedId));
   }
   return (
     <div>
-      <div data-section id="experience" className="downlaod-div">
+      <div className="downlaod-div">
         <h1>
           My <mark className="mark">Journey</mark>
         </h1>
@@ -44,7 +39,7 @@ function Experience() {
             </div>
 
             <div>
-              {id == item.id && activeArcc && (
+              {activeId == item.id && (
                 <div>
                   <ul className=" flex flex-col gap-y-[1.2rem] py-10 px-4 ">
                     <li>{item.description.p1}</li>

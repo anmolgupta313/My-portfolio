@@ -1,9 +1,9 @@
 import React from "react";
-import dev from "../../../public/dev.png";
-import dev1 from "../../../public/dev1.gif";
-import StarsCanvas from "../Stars/Stars";
+import dev from "../../../../public/dev.png";
+import dev1 from "../../../../public/dev1.gif";
 import Image from "next/image";
-
+import StarsCanvas from "@/Components/Stars/Stars";
+import "../Home/home.css";
 function HomePage() {
   return (
     <div className="home-div-main" data-section id="home">
@@ -25,20 +25,6 @@ function HomePage() {
           <button className="resume-btn">Resume</button>
         </div>
 
-        {/* <div className="home-inner-content-bottom">
-          <div>
-            <p>
-              Highly skilled at progressive enhancement, design systems & UI
-              Engineering.
-            </p>
-          </div>
-          <div>
-            <p>
-              Proven experience building successful products for clients across
-              several countries.
-            </p>
-          </div>
-        </div> */}
 
         <StarsCanvas />
       </div>

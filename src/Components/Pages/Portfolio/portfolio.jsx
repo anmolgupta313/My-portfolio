@@ -1,17 +1,16 @@
 import React from "react";
-import workoutmaker from "../../public/workoutmaker.png";
-import github from "../../public/github.png";
-import web from "../../public/web.png";
-import notemaker from "../../public/notemaker.png";
-import custompcbuild from "../../public/cutompcbuild.png";
-import weatherdashboard from "../../public/weatherdashboard.png";
-import quizchallenge from "../../public/quizchallenge.png";
-import workdayscheduler from "../../public/workdayscheduler.png";
-import project3 from "../../public/project3.png";
-import airBnb from "../../public/airbnb.png";
-import Akicks from "../../public/akicks.png";
-import Translate from "../../public/translate.png";
+import workoutmaker from "../../../../public/workoutmaker.png";
+import github from "../../../../public/github.png";
+import web from "../../../../public/web.png";
+import weatherdashboard from "../../../../public/weatherdashboard.png";
+import quizchallenge from "../../../../public/quizchallenge.png";
+import workdayscheduler from "../../../../public/workdayscheduler.png";
+import project3 from "../../../../public/project3.png";
+import airBnb from "../../../../public/airbnb.png";
+import Akicks from "../../../../public/akicks.png";
+import Translate from "../../../../public/translate.png";
 import Image from "next/image";
+import "../Portfolio/portfolio.css";
 function Portfolio() {
   const portfolio = [
     {
@@ -134,27 +133,30 @@ function Portfolio() {
           <div className="title">
             <h3>{activity.title}</h3>
           </div>
-          <div className="description">
-            <p>{activity.description}</p>
-          </div>
-          <div className="links">
-            <div>
-              <a href={activity.github.link}>
-                <Image
-                  className="iconss"
-                  src={activity.github.icon}
-                  alt="cat icon"
-                />
-              </a>
+
+          <div className="des-link-div">
+            <div className="description">
+              <p>{activity.description}</p>
             </div>
-            <div>
-              <a href={activity.deployedLink.link}>
-                <Image
-                  className="iconss"
-                  src={activity.deployedLink.icon}
-                  alt="web icon` "
-                />
-              </a>
+            <div className="links">
+              <div>
+                <a href={activity.github.link}>
+                  <Image
+                    className="iconss"
+                    src={activity.github.icon}
+                    alt="cat icon"
+                  />
+                </a>
+              </div>
+              <div>
+                <a href={activity.deployedLink.link}>
+                  <Image
+                    className="iconss"
+                    src={activity.deployedLink.icon}
+                    alt="web icon` "
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>

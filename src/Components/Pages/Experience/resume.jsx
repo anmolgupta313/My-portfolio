@@ -4,7 +4,7 @@ import { skills } from "@/Constants";
 import Image from "next/image";
 import React, { useState } from "react";
 import Experience from "./Experience";
-
+import "../Experience/resume.css";
 function Resume() {
   const [id, setId] = useState("");
 
@@ -17,9 +17,9 @@ function Resume() {
   }
 
   return (
-    <div className="resume-main-div">
+    <div data-section id="experience" className="resume-main-div">
       <div>
-        <div data-section id="resume" className="downlaod-div">
+        <div className="downlaod-div">
           <h1>
             My Programming <mark className="mark">Skills</mark>
           </h1>
@@ -58,7 +58,7 @@ function Resume() {
       </div>
 
       <div className="experience-div">
-       <Experience />
+        <Experience />
       </div>
     </div>
   );

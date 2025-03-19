@@ -1,0 +1,53 @@
+.about-main-div {
+  margin-top: -116px;
+  background-color: black;
+  color: #3ba0a4;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-main-div h1 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.intro-div h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.mark {
+  background-color: transparent;
+  color: #3ba0a4;
+}
+.about-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  flex: 1;
+  column-gap: 70px;
+}
+
+.avatar-div {
+  width: 100%;
+}
+.avatar-div img {
+  width: 90%;
+}
+
+.intro-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding-right: 3rem;
+}
+
+
+@media(max-width:500px){
+
+  .intro-div{
+    padding-right: 0rem;
+  }
+}

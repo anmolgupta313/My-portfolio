@@ -1,8 +1,7 @@
 import React from "react";
-import avatar from "../../public/avatar.svg";
 import Image from "next/image";
-import dev1 from "../../public/dev1.gif";
-
+import dev1 from "../../../../public/dev1.gif";
+import "../About/about.css"
 function About() {
   return (
     <div className="about-main-div">
