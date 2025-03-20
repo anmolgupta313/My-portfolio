@@ -87,7 +87,7 @@
   margin-left: 0px;
 }
 
-@media(max-width:415px){
+@media(max-width:435px){
   .skills-div{
     flex-wrap: nowrap;
     overflow: auto;
@@ -96,11 +96,14 @@
     align-items: center;
   }
 
-  .relative div img{
+  .image-skill{
     height: auto;
     width: 100%;
   }
 
+  .arrow{
+    padding: 0%;
+  }
   .skill-text{
     left: 100%;
   }

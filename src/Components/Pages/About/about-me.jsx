@@ -13,14 +13,14 @@ function About() {
           <h2>
             My <mark className="mark">Intro</mark> 
           </h2>
-          <p class="aboutme-Summary">
+          <p className="aboutme-Summary">
             My name is Anmol Gupta. I am a commerce graduate and I have always
             been passionate about creating and designing things from scratch.
             Taking this passion forward, I decided to learn web designing and
             development and started working as a freelancer in 2020.{" "}
           </p>
 
-          <p class="aboutme-Summary">
+          <p className="aboutme-Summary">
             {" "}
             I have worked as a website designer & developer with companies all
             over the world like Clickworthy, Canada; Nomads Skillshare, Bali and
@@ -30,7 +30,7 @@ function About() {
             smooth user experience. These websites helped to increase footfall
             and revenue for these companies.
           </p>
-          <p class="aboutme-Summary">
+          <p className="aboutme-Summary">
             {" "}
             I migrated to Canada in 2022 and completed my graduation in full
             stack web development from University of Toronto, where I learned
@@ -41,7 +41,7 @@ function About() {
             created MongoDB and MySQL data bases using Mongoose and SQL
             libraries .
           </p>
-          <p class="aboutme-Summary">
+          <p className="aboutme-Summary">
             {" "}
             I look forward to using my skillsets and experience and helping you
             with your web development needs.

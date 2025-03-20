@@ -36,7 +36,7 @@ function Resume() {
                     onMouseOver={onHover}
                     src={skill.icon}
                     alt={skill.title}
-                    className=" Image-skill h-[80px] w-auto m-8 grayscale hover:grayscale-0"
+                    className=" image-skill h-[80px] w-auto m-8 grayscale hover:grayscale-0"
                   />
                 </div>
 

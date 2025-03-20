@@ -1,6 +1,9 @@
 "use client";
 const { experience } = require("@/Constants");
+import arrowDown from "../../../../public/arrowDown.png";
+import arrowUp from "../../../../public/arrowUp.png";
 
+import Image from "next/image";
 import React, { useState } from "react";
 
 function Experience() {
@@ -30,11 +33,15 @@ function Experience() {
                 <p className="text-sm">{item.company}</p>
               </div>
 
-              <div>
-                <button onClick={arrcordianDown} id={item.id} className="px-4">
-                  {" "}
-                  Arrow
-                </button>
+              <div className="arrow-div">
+                {" "}
+                <Image
+                  onClick={arrcordianDown}
+                  id={item.id}
+                  className="arrow p-1"
+                  src={activeId == item.id?arrowUp:arrowDown}
+                  alt="sort-down"
+                />
               </div>
             </div>
 
