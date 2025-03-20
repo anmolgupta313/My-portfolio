@@ -19,6 +19,13 @@ function Nav() {
 
   const [menuToggle, setMenuToggel] = useState(false);
 
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   useEffect(() => {
     //create new instance and pass a callback function
     observer.current = new IntersectionObserver((entries) => {
@@ -64,13 +71,26 @@ function Nav() {
     });
   }
 
+  const handleScroll = () => {
+    if (window.scrollY > 20) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  };
+
   return (
     <>
       {" "}
       {windowDimenssion.minWidth > 640 ? (
         <div className="nav-main-div">
           <div className="Logo-div">
-            <Image className="Logo" src={logo} />
+            {/* <Image className="Logo" src={logo} /> */}
+            <Link href="/" className="logo-link">
+              <p>
+                Anmol <br /> <mark className="logo mark">Gupta</mark>
+              </p>
+            </Link>
           </div>
           <div className="nav-link-div">
             <div>
@@ -124,58 +144,140 @@ function Nav() {
             </div>
           </div>
           <div className="social-icon-div">
-            <div className="social-icon">
-              <Image className="social-svg" src={github} />
-            </div>
-            <div className="social-icon">
-              <Image className="social-svg" src={instagram} />
-            </div>
-            <div className="social-icon">
-              <Image className="social-svg" src={linkedIn} />
+            <div className="social-icon-sub-div">
+              <div className="social-icon">
+                <Link href="https://github.com/anmolgupta313" target="#">
+                  {" "}
+                  <Image className="social-svg" src={github} />
+                </Link>
+              </div>
+              <div className="social-icon">
+                <Link
+                  href="https://www.instagram.com/anmolgupta313/"
+                  target="#"
+                >
+                  <Image className="social-svg" src={instagram} />
+                </Link>
+              </div>
+              <div className="social-icon">
+                <Link
+                  href="https://www.linkedin.com/in/anmol-gupta-5bab4718b/"
+                  target="#"
+                >
+                  {" "}
+                  <Image className="social-svg" src={linkedIn} />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       ) : menuToggle == false ? (
-        <div onClick={mToggel}>
-          <img className="hamburger-img" src={hamburger} alt="" />
+        <div onClick={mToggel} className={scrolling?"mb-menu-ham-scroll":"mb-menu-ham"}>
+          {" "}
+          <div className="logo-nav-outer">
+            <Link href="/">
+              <p>
+                Anmol <mark className="mark">Gupta</mark>
+              </p>
+            </Link>
+          </div>
+          <div className="hamburger-icon">
+            <Image className="hamburger-img" src={hamburger} alt="" />
+          </div>
         </div>
       ) : (
         <div className="main-nav-bar-links-div">
           <div className="logo-mobile-div">
             <div className="logo-nav">
-              <a href="/">
+              <Link href="/">
                 <p>
                   Anmol <mark className="mark">Gupta</mark>
                 </p>
-              </a>
+              </Link>
             </div>
 
             <div onClick={mToggel} className="x-div-main">
-              <img className="closing-toggle-x" src={X} alt="" />
+              <Image className="closing-toggle-x" src={X} alt="" />
             </div>
           </div>
 
-          <ul>
+          <ul className="mb-link">
             <li>
-              <Link to="/">Home</Link>
+              <Link
+                className={activeSection === "home" ? "activeStyleNavLink" : ""}
+                href="#home"
+              >
+                Home
+              </Link>
             </li>
 
             <li>
-              <Link to="/About">About</Link>
+              <Link
+                className={
+                  activeSection === "about" ? "activeStyleNavLink" : ""
+                }
+                href="#about"
+              >
+                About
+              </Link>
             </li>
 
             <li>
-              <Link to="/Portfolio">Portfolio</Link>
+              <Link
+                className={
+                  activeSection === "portfolio" ? "activeStyleNavLink" : ""
+                }
+                href="#portfolio"
+              >
+                Portfolio
+              </Link>
             </li>
 
             <li>
-              <Link to="/Resume">Resume</Link>
+              <Link
+                className={
+                  activeSection === "experience" ? "activeStyleNavLink" : ""
+                }
+                href="#experience"
+              >
+                Experience
+              </Link>
             </li>
 
             <li>
-              <Link to="/Contact">Contact</Link>
+              <Link
+                className={
+                  activeSection === "contact" ? "activeStyleNavLink" : ""
+                }
+                href="#contact"
+              >
+                Contact
+              </Link>
             </li>
           </ul>
+
+          <div className="social-icon-sub-div">
+            <div className="social-icon">
+              <Link href="https://github.com/anmolgupta313" target="#">
+                {" "}
+                <Image className="social-svg" src={github} />
+              </Link>
+            </div>
+            <div className="social-icon">
+              <Link href="https://www.instagram.com/anmolgupta313/" target="#">
+                <Image className="social-svg" src={instagram} />
+              </Link>
+            </div>
+            <div className="social-icon">
+              <Link
+                href="https://www.linkedin.com/in/anmol-gupta-5bab4718b/"
+                target="#"
+              >
+                {" "}
+                <Image className="social-svg" src={linkedIn} />
+              </Link>
+            </div>
+          </div>
         </div>
       )}
     </>

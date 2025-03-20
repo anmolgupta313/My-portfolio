@@ -63,7 +63,7 @@ function Contact() {
       <div className="form-div">
         <form>
           <div className="fullname-div">
-            <label for="name">
+            <label htmlFor="name">
               Full Name
               <input
                 defaultValue={name}

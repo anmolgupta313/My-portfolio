@@ -38,7 +38,7 @@ function Experience() {
                 <Image
                   onClick={arrcordianDown}
                   id={item.id}
-                  className="arrow p-1"
+                  className="arrow p-2"
                   src={activeId == item.id?arrowUp:arrowDown}
                   alt="sort-down"
                 />

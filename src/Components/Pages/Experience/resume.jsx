@@ -17,14 +17,14 @@ function Resume() {
   }
 
   return (
-    <div data-section id="experience" className="resume-main-div">
-      <div>
-        <div className="downlaod-div">
+    <div  className="resume-main-div">
+      <div data-section id="experience">
+        <div  className="downlaod-div">
           <h1>
             My Programming <mark className="mark">Skills</mark>
           </h1>
         </div>
-        <div className="skills-div">
+        <div  className="skills-div">
           {skills.map((skill) => {
             return (
               <div key={skill.id} className="relative">
@@ -57,7 +57,7 @@ function Resume() {
         </div>
       </div>
 
-      <div className="experience-div">
+      <div  className="experience-div">
         <Experience />
       </div>
     </div>
