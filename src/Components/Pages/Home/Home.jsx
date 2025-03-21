@@ -39,7 +39,7 @@ function HomePage() {
           <StarsCanvas />
         </div>
         <div className="circle">
-          <Image alt="animated version of a guy with a laptop" src={dev} />
+          <Image priority alt="animated version of a guy with a laptop" src={dev} />
         </div>
       </div>
     </div>
