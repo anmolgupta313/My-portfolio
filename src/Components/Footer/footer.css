@@ -1,0 +1,14 @@
+/* foot css */
+
+.foot-div {
+  background-color: black;
+  color: white;
+  padding: 20px 5px 20px 5px;
+}
+
+.right-div p {
+  margin: 0px;
+  text-align: center;
+  color: #3ba0a4;
+  padding: 10px 0px 0px 0px;
+}

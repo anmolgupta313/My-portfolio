@@ -1,5 +1,4 @@
-
-import Nav from "@/Components/Nav/Nav";
+import Footer from "@/Components/Footer/Footer";
 import "./globals.css";
 import { NavComponentDynamic } from "@/Components/Nav/NavDynamic/NavDynamic";
 
@@ -8,8 +7,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         {" "}
-        <NavComponentDynamic />
+        <div className="flex">
+           <NavComponentDynamic />
         {children}
+        </div>
+       
+        <Footer />
       </body>
     </html>
   );

@@ -75,46 +75,6 @@ p.intro {
 .main-div-pages {
   width: 100%;
 }
-/* foot css */
-
-.foot-div {
-  background-color: black;
-  color: white;
-  padding: 20px 0px 20px 0px;
-}
-
-.follow-div p {
-  margin: 0px;
-  padding: 0px 0px 10px 0px;
-  font-size: 20px;
-  font-weight: 500;
-}
-.icon-main-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-div {
-  display: flex;
-  column-gap: 15px;
-  align-items: center;
-  justify-content: center;
-  color: #3ba0a4;
-  padding: 10px 0px 10px 0px;
-}
-
-.icon-div div img {
-  width: 80%;
-}
-
-.right-div p {
-  margin: 0px;
-  text-align: center;
-  color: #3ba0a4;
-  padding: 10px 0px 0px 0px;
-}
 
 /* Mobile Responsive */
 
