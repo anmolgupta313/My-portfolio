@@ -28,7 +28,6 @@ import arrowUp from "./arrowUp.png";
 import arrowDown from "./arrowDown.png";
 
 export {
-  code,
   bootstrap,
   css,
   html,
