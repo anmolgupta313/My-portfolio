@@ -76,7 +76,7 @@ function Contact() {
             </label>
           </div>
           <div className="email-div">
-            <label for="email">
+            <label htmlFor="email">
               EmailAddress{" "}
               <input
                 defaultValue={email}
@@ -89,7 +89,7 @@ function Contact() {
             </label>
           </div>
           <div className="message-div">
-            <label for="message">
+            <label htmlFor="message">
               {" "}
               Message
               <textarea

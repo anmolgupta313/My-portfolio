@@ -1,8 +1,6 @@
 "use client";
 const { experience } = require("@/Constants");
-import arrowDown from "../../../../public/arrowDown.png";
-import arrowUp from "../../../../public/arrowUp.png";
-
+import { arrowDown, arrowUp } from "../../../../public";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -22,7 +20,7 @@ function Experience() {
       </div>
       <div className="experience-sub-div">
         {experience.map((item) => (
-          <div>
+          <div key={item.id}>
             <div
               key={item.id}
               className="flex items-center justify-start  p-4 border-b-2 border-slate-300"
@@ -39,8 +37,8 @@ function Experience() {
                   onClick={arrcordianDown}
                   id={item.id}
                   className="arrow p-2"
-                  src={activeId == item.id?arrowUp:arrowDown}
-                  alt="sort-down"
+                  src={activeId == item.id ? arrowUp : arrowDown}
+                  alt="sort-down-up"
                 />
               </div>
             </div>
@@ -49,12 +47,12 @@ function Experience() {
               {activeId == item.id && (
                 <div>
                   <ul className=" flex flex-col gap-y-[1.2rem] py-10 px-4 ">
-                    <li>{item.description.p1}</li>
-                    <li>{item.description.p2}</li>
-                    <li>{item.description.p3}</li>
-                    <li>{item.description.p4}</li>
-                    <li>{item.description.p5}</li>
-                    <li>{item.description.p6}</li>
+                    <li>{item.description?.p1}</li>
+                    <li>{item.description?.p2}</li>
+                    <li>{item.description?.p3}</li>
+                    <li>{item.description?.p4}</li>
+                    <li>{item.description?.p5}</li>
+                    <li>{item.description?.p6}</li>
                   </ul>
                 </div>
               )}

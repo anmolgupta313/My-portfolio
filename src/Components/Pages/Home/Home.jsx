@@ -1,5 +1,5 @@
 import React from "react";
-import dev from "../../../../public/dev.png";
+import {dev} from "../../../../public";
 
 import Image from "next/image";
 import StarsCanvas from "@/Components/Stars/Stars";
@@ -39,7 +39,7 @@ function HomePage() {
           <StarsCanvas />
         </div>
         <div className="circle">
-          <Image src={dev} />
+          <Image alt="animated version of a guy with a laptop" src={dev} />
         </div>
       </div>
     </div>

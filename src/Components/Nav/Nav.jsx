@@ -1,15 +1,12 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import logo from "../../../public/logo.jpg";
 import Image from "next/image";
-import github from "../../../public/github.png";
-import instagram from "../../../public/instagram.png";
-import linkedIn from "../../../public/linkedin.png";
+
 import "../Nav/Nav.css";
 import Link from "next/link";
-import X from "../../../public/x.png";
-import hamburger from "../../../public/hamburger.png";
+import { X, hamburger, instagram, linkedIn, git } from "../../../public";
+
 function Nav() {
   const [activeSection, setActiveSection] = useState(null);
   const observer = useRef(null);
@@ -85,7 +82,6 @@ function Nav() {
       {windowDimenssion.minWidth > 640 ? (
         <div className="nav-main-div">
           <div className="Logo-div">
-            {/* <Image className="Logo" src={logo} /> */}
             <Link href="/" className="logo-link">
               <p>
                 Anmol <br /> <mark className="logo mark">Gupta</mark>
@@ -148,7 +144,7 @@ function Nav() {
               <div className="social-icon">
                 <Link href="https://github.com/anmolgupta313" target="#">
                   {" "}
-                  <Image className="social-svg" src={github} />
+                  <Image className="social-svg" src={git} alt="github-icon" />
                 </Link>
               </div>
               <div className="social-icon">
@@ -156,7 +152,11 @@ function Nav() {
                   href="https://www.instagram.com/anmolgupta313/"
                   target="#"
                 >
-                  <Image className="social-svg" src={instagram} />
+                  <Image
+                    className="social-svg"
+                    src={instagram}
+                    alt="instagram icon"
+                  />
                 </Link>
               </div>
               <div className="social-icon">
@@ -165,14 +165,21 @@ function Nav() {
                   target="#"
                 >
                   {" "}
-                  <Image className="social-svg" src={linkedIn} />
+                  <Image
+                    className="social-svg"
+                    src={linkedIn}
+                    alt="linked Icon"
+                  />
                 </Link>
               </div>
             </div>
           </div>
         </div>
       ) : menuToggle == false ? (
-        <div onClick={mToggel} className={scrolling?"mb-menu-ham-scroll":"mb-menu-ham"}>
+        <div
+          onClick={mToggel}
+          className={scrolling ? "mb-menu-ham-scroll" : "mb-menu-ham"}
+        >
           {" "}
           <div className="logo-nav-outer">
             <Link href="/">
@@ -182,7 +189,11 @@ function Nav() {
             </Link>
           </div>
           <div className="hamburger-icon">
-            <Image className="hamburger-img" src={hamburger} alt="" />
+            <Image
+              className="hamburger-img"
+              src={hamburger}
+              alt="3 horizontal line in a single column"
+            />
           </div>
         </div>
       ) : (
@@ -197,7 +208,7 @@ function Nav() {
             </div>
 
             <div onClick={mToggel} className="x-div-main">
-              <Image className="closing-toggle-x" src={X} alt="" />
+              <Image className="closing-toggle-x" src={X} alt="x" />
             </div>
           </div>
 
@@ -260,12 +271,16 @@ function Nav() {
             <div className="social-icon">
               <Link href="https://github.com/anmolgupta313" target="#">
                 {" "}
-                <Image className="social-svg" src={github} />
+                <Image className="social-svg" src={git} alt="github icon" />
               </Link>
             </div>
             <div className="social-icon">
               <Link href="https://www.instagram.com/anmolgupta313/" target="#">
-                <Image className="social-svg" src={instagram} />
+                <Image
+                  className="social-svg"
+                  src={instagram}
+                  alt="instagram icon"
+                />
               </Link>
             </div>
             <div className="social-icon">
@@ -274,7 +289,11 @@ function Nav() {
                 target="#"
               >
                 {" "}
-                <Image className="social-svg" src={linkedIn} />
+                <Image
+                  className="social-svg"
+                  src={linkedIn}
+                  alt="linked Incon"
+                />
               </Link>
             </div>
           </div>

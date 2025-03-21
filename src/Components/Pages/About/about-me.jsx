@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import dev1 from "../../../../public/dev1.gif";
+import {dev1} from "../../../../public";
 import "../About/about.css"
 function About() {
   return (
     <div className="about-main-div">
       <div data-section id="about" className="about-div">
         <div className="avatar-div">
-          <Image src={dev1} alt="" />
+          <Image  src={dev1} alt="animated version of a guy with a laptop typing code" />
         </div>
         <div className="intro-div">
           <h2>

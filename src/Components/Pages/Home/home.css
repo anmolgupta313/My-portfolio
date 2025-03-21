@@ -21,7 +21,6 @@
   height: 100vh;
   position: relative;
   top: -11rem;
-  /* flex-wrap: wrap; */
 }
 .home-sub-div {
   display: flex;
@@ -29,7 +28,6 @@
   margin-left: 7rem;
 }
 .home-div {
-  /* max-width: 54%; */
   display: flex;
   flex-direction: column;
   row-gap: 15px;
