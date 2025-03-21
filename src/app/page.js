@@ -1,10 +1,14 @@
 import About from "@/Components/Pages/About/about-me";
-// import Meteors from "@/Components/Meteors/Meteors";
-
 import Portfolio from "@/Components/Pages/Portfolio/portfolio";
 import Contact from "@/Components/Pages/Contact/contact";
 import HomePage from "@/Components/Pages/Home/Home";
 import Resume from "@/Components/Pages/Experience/resume";
+
+export const metadata = {
+  title: "Anmol Gupta Portfolio",
+  description:
+    "Anmolgupta.ca: Frontend Developer - the art, the science, and the passion.",
+};
 
 export default function Home() {
   return (
