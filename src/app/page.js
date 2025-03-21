@@ -16,7 +16,7 @@ export const metadata = {
       siteName: "Anmol Gupta Portfolio",
       images: [
         {
-          url: portfolioHero, 
+          url: `${portfolioHero}`, 
           width: 1200,
           height: 630,
           alt: "Anmol Gupta Portfolio Meta Image",

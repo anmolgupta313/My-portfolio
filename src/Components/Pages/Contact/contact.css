@@ -16,7 +16,7 @@
   }
   
   .form-div {
-    width: 27%;
+    width: 30%;
     padding: 30px;
     border: solid transparent 1px;
     border-radius: 4px;
@@ -72,6 +72,18 @@
   
   @media(max-width:1040px){
     .form-div{
-      width: 70%;
+      width: 60%;
+    }
+  }
+
+  @media(max-width:800px){
+    .form-div{
+      width: 75%;
+    }
+  }
+
+  @media(max-width:500px){
+    .form-div{
+      width: 90%;
     }
   }
