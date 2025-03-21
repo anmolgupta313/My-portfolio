@@ -30,18 +30,6 @@ body {
   flex-direction: column;
 }
 
-
-@media (max-width: 767px) {
-  .hobbies-card-main {
-    margin: 20px;
-    row-gap: 20px;
-    padding: 10px 0px 50px 0px;
-  }
-  .hobbies-card {
-    width: 100%;
-    justify-content: space-around;
-  }
-}
 /* responsive css */
 @media (max-width: 714px) {
   .nav {
@@ -99,12 +87,6 @@ body {
     margin: 0px 30px;
   }
 }
-
-/* @media(max-width:550px){
-  .form-div{
-    width: 75%;
-  }
-} */
 
 @media (max-width: 372px) {
   .div-headingone {
