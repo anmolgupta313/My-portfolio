@@ -3,11 +3,27 @@ import Portfolio from "@/Components/Pages/Portfolio/portfolio";
 import Contact from "@/Components/Pages/Contact/contact";
 import HomePage from "@/Components/Pages/Home/Home";
 import Resume from "@/Components/Pages/Experience/resume";
-
+import { portfolioHero } from "../../public";
 export const metadata = {
   title: "Anmol Gupta Portfolio",
   description:
     "Anmolgupta.ca: Frontend Developer - the art, the science, and the passion.",
+    openGraph: {
+      title: "Anmol Gupta Portfolio",
+      description:
+        "Anmolgupta.ca: Frontend Developer - the art, the science, and the passion.",
+      url: "https://anmolgupta.ca",
+      siteName: "Anmol Gupta Portfolio",
+      images: [
+        {
+          url: portfolioHero, 
+          width: 1200,
+          height: 630,
+          alt: "Anmol Gupta Portfolio Meta Image",
+        },
+      ],
+      type: "website",
+    },
 };
 
 export default function Home() {

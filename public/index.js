@@ -26,7 +26,7 @@ import X from "./x.png";
 import hamburger from "./hamburger.png";
 import arrowUp from "./arrowUp.png";
 import arrowDown from "./arrowDown.png";
-
+import portfolioHero from "./portfolio-hero.png";
 export {
   bootstrap,
   css,
@@ -55,5 +55,6 @@ export {
   X,
   hamburger,
   arrowDown,
-  arrowUp
+  arrowUp,
+  portfolioHero,
 };
