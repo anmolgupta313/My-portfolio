@@ -94,16 +94,7 @@ p.intro {
   }
 }
 
-@media (max-width: 850px) {
-  .skills-div {
-    justify-content: flex-start;
-    margin-left: 75px;
-  }
 
-  .card-div {
-    width: 90%;
-  }
-}
 
 @media (max-width: 640px) {
   main {

@@ -67,15 +67,18 @@
   width: 90%;
 }
 
-@media(max-width:1040px){
-
+@media (max-width: 1040px) {
   .cards-main-div {
-  justify-content: center;
+    justify-content: center;
   }
 }
-
-@media(max-width:500px){
-  .card-div{
+@media (max-width: 850px) {
+  .card-div {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .card-div {
     width: 90%;
     margin: 0px;
   }
