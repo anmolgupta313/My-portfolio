@@ -78,7 +78,13 @@ p.intro {
 
 /* Mobile Responsive */
 
-@media (max-width: 912px) {
+@media(max-width:1111px){
+  .circle{
+    width: 34.7rem;
+  }
+}
+
+@media (max-width: 1022px) {
   .about-div {
     flex-wrap: wrap;
     align-items: flex-start;
