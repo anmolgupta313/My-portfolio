@@ -49,7 +49,7 @@ function Portfolio() {
     <div className="portfolio-main-div">
       <div data-section id="portfolio" className="portfolio-heading-div">
         <h1>
-          MY <mark className="mark">PORTFOLIO</mark>
+          MY <mark className="mark">PROJECTS</mark>
         </h1>
       </div>
       <div className="cards-main-div">{pop}</div>

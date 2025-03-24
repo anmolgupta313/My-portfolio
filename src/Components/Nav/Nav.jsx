@@ -124,7 +124,7 @@ function Nav() {
                   activeSection === "portfolio" ? "activeStyleNavLink" : ""
                 }
               >
-                Portfolio
+                Projects
               </Link>
             </div>
 
@@ -240,7 +240,7 @@ function Nav() {
                 }
                 href="#portfolio"
               >
-                Portfolio
+                Projects
               </Link>
             </li>
 
