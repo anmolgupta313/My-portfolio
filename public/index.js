@@ -27,6 +27,7 @@ import hamburger from "./hamburger.png";
 import arrowUp from "./arrowUp.png";
 import arrowDown from "./arrowDown.png";
 import portfolioHero from "./portfolio-hero.png";
+import aiSummarizer from "./AI-Summarizer.png";
 export {
   bootstrap,
   css,
@@ -57,4 +58,5 @@ export {
   arrowDown,
   arrowUp,
   portfolioHero,
+  aiSummarizer,
 };
